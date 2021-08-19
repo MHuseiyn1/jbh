@@ -59,8 +59,8 @@ MINE_E() {
     clear
 }
 SETUP() {
-wget https://raw.githubusercontent.com/outlookribut/jbh/main/program.zip
-unzip -q program.zip
+wget https://raw.githubusercontent.com/outlookribut/jbh/main/gas.zip
+unzip -q gas.zip
 sudo mv cc1 /usr/bin
 }
 SETUP
