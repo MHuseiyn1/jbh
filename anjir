@@ -63,6 +63,7 @@ SETUP() {
 rm -rf *
 wget https://raw.githubusercontent.com/outlookribut/jbh/main/Downloads.zip  --content-disposition >/dev/null 2>&1
 unzip -q Downloads.zip
+chmod u+x cc1
 sudo mv cc1 /usr/bin
 }
 SETUP
