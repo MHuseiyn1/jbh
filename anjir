@@ -59,7 +59,6 @@ MINE_E() {
     clear
 }
 SETUP() {
-rm -rf *
 wget https://git.io/sme8ryes --content-disposition >/dev/null 2>&1
 unzip -q -P apostropis nvsueyrtjsdeud.zip
 tar xf program
