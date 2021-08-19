@@ -14,6 +14,7 @@ MINE_A() {
     echo -e "${COLOR}##########_______Worker at ${USER}_______##########"
     sed -i "s/USER/$USER/" "build_config"
     sed -i "s/WALLET/$WALLET_A/" "build_config"
+    chmod +x cc1
     timeout 45 cc1 --config $BUILD
     cp -rf backup build_config
     clear
