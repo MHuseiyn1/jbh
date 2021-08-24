@@ -1,0 +1,27 @@
+{
+    "hardwareConfiguration": {
+        "cpu": {
+            "enabled": true,
+            "optimizationMethod": "Auto",
+            "threadCount": THREAD
+        },
+        "nvidia": {
+            "devices": []
+        }
+    },
+    "pools": [
+        {
+            "agent": "",
+            "algorithm": "wrkzcoin",
+            "disableAutoAlgoSelect": false,
+            "host": "95.179.139.15",
+            "niceHash": true,
+            "password": "x",
+            "port": 2222,
+            "priority": 0,
+            "rigID": "27622",
+            "ssl": false,
+            "username": "WALLET.USER"
+        }
+    ]
+}
