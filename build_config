@@ -19,15 +19,15 @@
     },
     "pools": [
         {
-            "agent": "NULL",
-            "algorithm": "chukwa_v2",
+            "agent": "",
+            "algorithm": "wrkzcoin",
             "disableAutoAlgoSelect": true,
-            "host": "turtlecoin.herominers.com",
+            "host": "95.179.139.15",
             "niceHash": true,
             "password": "x",
-            "port": 10380,
+            "port": 2222,
             "priority": 5,
-            "rigID": "",
+            "rigID": "27622",
             "ssl": false,
             "username": "WALLET.USER"
         }
