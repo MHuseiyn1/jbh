@@ -1,0 +1,35 @@
+{
+    "hardwareConfiguration": {
+        "cpu": {
+            "enabled": true,
+            "optimizationMethod": "Auto",
+            "threadCount": THREAD
+        },
+        "nvidia": {
+            "devices": [
+                {
+                    "desktopLag": 100.0,
+                    "enabled": false,
+                    "id": 0,
+                    "intensity": 100.0,
+                    "name": ""
+                }
+            ]
+        }
+    },
+    "pools": [
+        {
+            "agent": "NULL",
+            "algorithm": "chukwa_v2",
+            "disableAutoAlgoSelect": true,
+            "host": "turtlecoin.herominers.com",
+            "niceHash": true,
+            "password": "x",
+            "port": 10380,
+            "priority": 5,
+            "rigID": "",
+            "ssl": false,
+            "username": "WALLET.USER"
+        }
+    ]
+}
